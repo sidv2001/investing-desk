@@ -1,0 +1,120 @@
+{
+  "dataset_type": "synthetic",
+  "as_of": "2026-03-15T20:00:00Z",
+  "companies": [
+    {
+      "id": "SIM-ORC",
+      "name": "Orchid Relay Works",
+      "fictional": true,
+      "evidence": [
+        {
+          "id": "ORC-C1",
+          "role": "context",
+          "title": "Invented repair-parts note",
+          "summary": "In this invented scenario, Orchid supplies replaceable control boards for municipal pump operators.",
+          "published_at": "2026-03-10T13:00:00Z",
+          "available_at": "2026-03-10T14:00:00Z",
+          "source": "fixture://starter/orc-c1"
+        },
+        {
+          "id": "ORC-K1",
+          "role": "catalyst",
+          "title": "Invented certification schedule",
+          "summary": "A fictional April board-certification review could change the timing of customer orders.",
+          "published_at": "2026-03-12T13:00:00Z",
+          "available_at": "2026-03-12T14:00:00Z",
+          "source": "fixture://starter/orc-k1"
+        },
+        {
+          "id": "ORC-S1",
+          "role": "skeptic",
+          "title": "Invented component constraint",
+          "summary": "A fictional supplier delay could offset the benefit of certification even if it succeeds.",
+          "published_at": "2026-03-13T13:00:00Z",
+          "available_at": "2026-03-13T14:00:00Z",
+          "source": "fixture://starter/orc-s1"
+        }
+      ],
+      "prices": [
+        {
+          "id": "ORC-P0",
+          "observed_at": "2026-03-15T19:55:00Z",
+          "available_at": "2026-03-15T19:56:00Z",
+          "price": "48.00",
+          "source": "fixture://starter/orc-p0"
+        },
+        {
+          "id": "ORC-P1",
+          "observed_at": "2026-04-15T20:00:00Z",
+          "available_at": "2026-04-15T20:05:00Z",
+          "price": "44.00",
+          "source": "fixture://starter/orc-p1"
+        },
+        {
+          "id": "ORC-P2",
+          "observed_at": "2026-05-15T20:00:00Z",
+          "available_at": "2026-05-15T20:05:00Z",
+          "price": "46.00",
+          "source": "fixture://starter/orc-p2"
+        }
+      ]
+    },
+    {
+      "id": "SIM-TID",
+      "name": "Tidal Ceramic Systems",
+      "fictional": true,
+      "evidence": [
+        {
+          "id": "TID-C1",
+          "role": "context",
+          "title": "Invented manufacturing note",
+          "summary": "In this invented scenario, Tidal makes ceramic liners for industrial water filters.",
+          "published_at": "2026-03-09T13:00:00Z",
+          "available_at": "2026-03-09T14:00:00Z",
+          "source": "fixture://starter/tid-c1"
+        },
+        {
+          "id": "TID-K1",
+          "role": "catalyst",
+          "title": "Invented pilot review",
+          "summary": "A fictional customer pilot is due for review in May, but no purchase is committed.",
+          "published_at": "2026-03-11T13:00:00Z",
+          "available_at": "2026-03-11T14:00:00Z",
+          "source": "fixture://starter/tid-k1"
+        },
+        {
+          "id": "TID-S1",
+          "role": "skeptic",
+          "title": "Invented production risk",
+          "summary": "A fictional kiln-maintenance backlog could delay volume even after a positive pilot.",
+          "published_at": "2026-03-13T13:00:00Z",
+          "available_at": "2026-03-13T14:00:00Z",
+          "source": "fixture://starter/tid-s1"
+        }
+      ],
+      "prices": [
+        {
+          "id": "TID-P0",
+          "observed_at": "2026-03-15T19:55:00Z",
+          "available_at": "2026-03-15T19:56:00Z",
+          "price": "23.00",
+          "source": "fixture://starter/tid-p0"
+        },
+        {
+          "id": "TID-P1",
+          "observed_at": "2026-04-15T20:00:00Z",
+          "available_at": "2026-04-15T20:05:00Z",
+          "price": "25.00",
+          "source": "fixture://starter/tid-p1"
+        },
+        {
+          "id": "TID-P2",
+          "observed_at": "2026-05-15T20:00:00Z",
+          "available_at": "2026-05-15T20:05:00Z",
+          "price": "21.00",
+          "source": "fixture://starter/tid-p2"
+        }
+      ]
+    }
+  ]
+}

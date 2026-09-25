@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "investing-desk"
+version = "0.1.0"
+description = "Offline, fictional investment research and paper decision lab"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+investing-desk = "investing_desk.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
