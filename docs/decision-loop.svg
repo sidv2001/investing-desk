@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 510" role="img" aria-labelledby="diagram-title diagram-description">
+  <title id="diagram-title">Investing Desk: an offline human decision loop</title>
+  <desc id="diagram-description">Fictional, dated evidence flows to three cited workers and a human gate. Only approval leads down to a local paper ledger, then left to monitoring and retrospective. A separate live-orders card says disabled and has no connection to the ledger.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M1 1 L9 5 L1 9" fill="none" stroke="#a8dfc2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="980" height="510" rx="24" fill="#0d1728"/>
+  <text x="36" y="52" fill="#f5f8fc" font-family="system-ui, sans-serif" font-size="28" font-weight="700">Investing Desk</text>
+  <text x="36" y="82" fill="#b9cde5" font-family="system-ui, sans-serif" font-size="17">An offline loop with an explicit human gate</text>
+
+  <g fill="#192a42" stroke="#7799b8" stroke-width="2">
+    <rect x="36" y="112" width="276" height="142" rx="16"/>
+    <rect x="352" y="112" width="276" height="142" rx="16"/>
+    <rect x="668" y="112" width="276" height="142" rx="16"/>
+    <rect x="668" y="324" width="276" height="142" rx="16"/>
+    <rect x="352" y="324" width="276" height="142" rx="16"/>
+  </g>
+  <rect x="36" y="324" width="276" height="142" rx="16" fill="#2b2530" stroke="#f7c985" stroke-width="2" stroke-dasharray="8 5"/>
+
+  <g font-family="system-ui, sans-serif">
+    <g fill="#9fe6c4" font-size="15" font-weight="700">
+      <text x="56" y="144">01 / EVIDENCE</text>
+      <text x="372" y="144">02 / WORKERS + MEMO</text>
+      <text x="688" y="144">03 / HUMAN DECISION</text>
+      <text x="688" y="356">04 / PAPER LEDGER</text>
+      <text x="372" y="356">05 / RETROSPECTIVE</text>
+    </g>
+    <g fill="#f5f8fc" font-size="18">
+      <text x="56" y="180">Local fictional notes</text>
+      <text x="56" y="207">Dates and source IDs</text>
+      <text x="372" y="180">Context / catalyst / skeptic</text>
+      <text x="372" y="207">Citations + countercase</text>
+      <text x="688" y="180">Review full proposal hash</text>
+      <text x="688" y="207">Approve / reject / defer</text>
+      <text x="688" y="392">SQLite, modeled costs</text>
+      <text x="688" y="419">Exposure limits, no broker</text>
+      <text x="372" y="392">Later invented snapshot</text>
+      <text x="372" y="419">Revisit the original thesis</text>
+      <text x="56" y="392">Adapter always raises</text>
+      <text x="56" y="419">No enable setting</text>
+    </g>
+    <g fill="#b9cde5" font-size="14">
+      <text x="56" y="236">Available by the as-of time</text>
+      <text x="372" y="236">At most 2 notes per worker</text>
+      <text x="688" y="236">Typed terminal confirmation</text>
+      <text x="688" y="448">Only after approval</text>
+      <text x="372" y="448">Estimated, not realized</text>
+    </g>
+    <text x="56" y="356" fill="#ffd895" font-size="15" font-weight="700">LIVE ORDERS / DISABLED</text>
+    <text x="819" y="296" fill="#9fe6c4" font-size="14" font-weight="700">approve only</text>
+  </g>
+  <g fill="none" stroke="#a8dfc2" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M319 183 H342"/>
+    <path d="M635 183 H658"/>
+    <path d="M806 261 V314"/>
+    <path d="M661 396 H638"/>
+  </g>
+</svg>
