@@ -1,4 +1,4 @@
-# Decision loop (text alternative)
+# Current starter decision loop (text alternative)
 
 1. **Read local fictional evidence.** Each note has a fixture citation,
    publication time, and availability time. Invented price snapshots have
@@ -7,9 +7,9 @@
 2. **Build a cited memo.** Separate context, catalyst, and skeptic workers
    each see at most two notes for their role. They repeat fixture claims with
    source IDs and do not access the ledger.
-3. **Keep the decision human.** Review the one-page memo, price citation,
-   proposal costs, hash, and expiry. A person interactively approves, rejects,
-   or defers a PAPER proposal. Rejecting or deferring creates no position.
+3. **Review a PAPER proposal manually.** Inspect the one-page memo, price
+   citation, proposal costs, hash, and expiry. A person interactively approves,
+   rejects, or defers the proposal. Rejecting or deferring creates no position.
 4. **Record an approved PAPER entry locally.** SQLite enforces the approval
    gate. The application checks modeled costs, per-company and total exposure,
    available virtual cash, and proposal expiry before booking.
@@ -20,3 +20,6 @@
 
 **Separate boundary:** `DisabledLiveOrderAdapter` always raises on submit,
 cancel, or replace; no arrow in the diagram leads to a broker or live order.
+This diagram describes the offline starter, not a requirement for per-trade
+approval in the intended system. See the [roadmap](roadmap.md) for the
+authorized autonomous workflow.

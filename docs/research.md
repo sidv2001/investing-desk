@@ -8,7 +8,7 @@ returns.
 | --- | --- |
 | [Alpaca, Paper Trading](https://docs.alpaca.markets/us/docs/paper-trading) | Paper execution differs from live execution; the docs list omitted effects including market impact, latency slippage, queue position, fees, and dividends. This starter does **not** call Alpaca, and its local invented-price ledger is simpler still. |
 | [Alpaca, About Market Data API](https://docs.alpaca.markets/us/docs/about-market-data-api) | Real-time and historical feeds have plan-specific coverage and conditions. No API, feed, credentials, or data from Alpaca are used here. Access and permitted uses need a separate review before any integration. |
-| [QuantConnect, Research Engine](https://www.quantconnect.com/docs/v2/research-environment/key-concepts/research-engine) | Research is a distinct activity from event-driven execution. Our worker boundary produces a memo, never an order. |
+| [QuantConnect, Research Engine](https://www.quantconnect.com/docs/v2/research-environment/key-concepts/research-engine) | Research is a distinct activity from event-driven execution. This starter's read-only workers produce a memo, never an order; authorized execution is a planned later capability. |
 | [QuantConnect, Live Trading Reconciliation](https://www.quantconnect.com/docs/v2/writing-algorithms/live-trading/reconciliation) | Custom data's *availability* can lag its event timestamp, and look-ahead bias can persist. Fixtures record both observed/published time and available time; memos reject future evidence and only select available prices. |
 | [QuantConnect, Slippage Models](https://www.quantconnect.com/docs/v2/writing-algorithms/reality-modeling/slippage/supported-models) and [Fee Models](https://www.quantconnect.com/docs/v2/writing-algorithms/reality-modeling/transaction-fees/supported-models) | Costs and fill assumptions affect results. Our 0.10% per-side slippage and $1 per-side fee are *chosen examples*, not fitted models or broker terms. |
 | [FINRA, Regulatory Notice 15-09](https://www.finra.org/rules-guidance/notices/15-09) | Describes supervision, testing, validation, trading-system, and compliance controls for algorithmic strategies. It is guidance for relevant market participants, not a certification or a live-trading checklist fulfilled by this lab. |
@@ -18,5 +18,5 @@ returns.
 
 Research papers are ideas to interrogate, not evidence that a trading system is
 profitable. A future evaluation needs licensed data, point-in-time availability,
-out-of-sample controls, realistic costs, and clear human review before its
-results mean anything.
+out-of-sample controls, realistic costs, and independent scrutiny before its
+results inform strategy changes or trading authority.
